@@ -8,7 +8,7 @@ export async function isValidAdmin(
 ): Promise<boolean> {
   await connectDB();
 
-  /* 🔐 Ensure base admin exists (one-time) */
+  /* Ensure base admin exists (one-time) */
   const baseEmail = "admin@inventory.com";
   const basePassword = "admin123";
 
@@ -29,3 +29,4 @@ export async function isValidAdmin(
 
   return await bcrypt.compare(password, admin.password);
 }
+
