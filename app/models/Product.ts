@@ -14,7 +14,7 @@ const ProductSchema = new Schema<ProductDoc>(
     category: { type: String, required: true },
     units: { type: Number, required: true },
     mrp: { type: Number, required: true },
-    imageUrl: { type: String } // ✅ THIS WAS MISSING
+    imageUrl: { type: String } 
   },
   {
     timestamps: true
@@ -26,3 +26,4 @@ const Product: Model<ProductDoc> =
   mongoose.model<ProductDoc>("Product", ProductSchema);
 
 export default Product;
+
