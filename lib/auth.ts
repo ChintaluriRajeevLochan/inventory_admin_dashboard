@@ -23,10 +23,11 @@ export async function isValidAdmin(
     baseAdmin = await Admin.findOne({ email: baseEmail });
   }
 
-  /* 🔎 Normal login check */
+  /* Normal login check */
   const admin = await Admin.findOne({ email });
   if (!admin) return false;
 
   return await bcrypt.compare(password, admin.password);
 }
+
 
