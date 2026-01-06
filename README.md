@@ -171,4 +171,5 @@ lib/
 
 🎥 Demo Video
 
-(Video link can be added here.)
+https://youtu.be/SQ4mv1I2nHY?si=IGdVBM_Inswt71cZ
+
